@@ -1,0 +1,46 @@
+MIT License
+
+Copyright (c) 2025 kenvx
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+SECURITY DISCLAIMER:
+
+WebStrike is designed for authorized security testing and educational purposes only. 
+Users are responsible for ensuring they have proper authorization before testing 
+any systems. Unauthorized testing is illegal and unethical.
+
+The authors and contributors of WebStrike:
+- Do NOT authorize or condone illegal or unauthorized testing activities
+- Are NOT responsible for any misuse of this software
+- Are NOT liable for any damages caused by the use or misuse of this software
+- Strongly encourage responsible disclosure of any vulnerabilities found
+
+By using WebStrike, you agree to:
+- Only test systems you own or have explicit written permission to test
+- Follow all applicable laws and regulations
+- Use the tool responsibly and ethically
+- Not use the tool for malicious purposes
+
+LEGAL NOTICE:
+
+This software is provided for educational and authorized testing purposes only.
+Use of this software against systems without proper authorization is strictly
+prohibited and may be illegal in your jurisdiction. Always ensure you have
+proper authorization before conducting any security testing activities.
