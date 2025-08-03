@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  webstrike:
+    build: .
+    container_name: webstrike-scanner
+    volumes:
+      # Mount reports directory to persist results
+      - ./reports/output:/app/reports/output
+      # Mount custom payloads if needed
+      - ./engine/payloads:/app/engine/payloads
+    environment:
+      - PYTHONUNBUFFERED=1
+    # Network mode for scanning internal services
+    network_mode: "host"
+    # Override default command for interactive use
+    # command: ["scan", "-u", "https://example.com"]
+    
+  # Optional: Web interface (future development)
+  webstrike-web:
+    build: .
+    container_name: webstrike-web
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./reports/output:/app/reports/output
+    environment:
+      - PYTHONUNBUFFERED=1
+    # command: ["python", "-m", "api.main"]  # Future web API
+    profiles:
+      - web  # Only start with --profile web
+
+# Optional: Networks for isolated testing
+networks:
+  webstrike-net:
+    driver: bridge
+
+# Volumes for persistent data
+volumes:
+  reports-data:
+    driver: local
